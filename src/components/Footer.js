@@ -157,14 +157,14 @@ export const Footer = () => {
                       </li>
                     </a>
                     <div className="flex space-x-4">
-                      <a href="/hiring">
+                      <a href="/">
                         <li className="paragraf4 cursor-pointer text-primary-400 hover:text-white mb-1">
                           Careers
                         </li>
                       </a>
-                      <Link to="/hiring" className="bg-[#03CC6F] animate-pulse rounded-full px-2 sm:px-3 cursor-pointer sm:rounded-lg">
+                      <a href="/" className="bg-[#03CC6F] animate-pulse rounded-full px-2 sm:px-3 cursor-pointer sm:rounded-lg">
                         Hiring
-                      </Link>
+                      </a>
                     </div>
                   </ul>
                 </div>

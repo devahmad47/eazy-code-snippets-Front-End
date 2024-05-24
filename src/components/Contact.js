@@ -16,7 +16,7 @@ const Contact = () => {
     if (email !== "" && subject !== "" && name !== "" && message !== "") {
       emailjs
         .sendForm("service_e4l9pz1", "template_hjpihos", form.current, {
-          publicKey: "1IwUH-u1KJCf5wzzQ",
+          publicKey: "0LiYiAAP4EoRGoJXu",
         })
         .then(
           (response) => {

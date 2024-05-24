@@ -76,7 +76,7 @@ function App() {
         <Route path="/products" element={<LayoutProducts />} />
         <Route path="/Appointment/:productId?" element={<Appointment />} />
         <Route path="/contact-us" element={<ContactForm />} />
-        <Route path="/hiring" element={<Hiring />} />
+        {/* <Route path="/hiring" element={<Hiring />} /> */}
         <Route path="/webDetails" element={<WebProducts />} />
         <Route path="/texttoimg" element={<Image />} />
         <Route path="/productdetails/:_id" element={<ProductDetails />} />
