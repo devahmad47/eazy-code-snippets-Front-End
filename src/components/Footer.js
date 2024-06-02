@@ -9,7 +9,7 @@ export const Footer = () => {
           className="relative lg:p-2 p-0 z-10"
           style={{ opacity: 1, transform: "none" }}
         >
-          <div className="lg:p-8 py-10 lg:py-0 px-4 shadow-xl bg-black rounded-3xl container">
+          <div className="lg:p-8 py-10 lg:py-0 px-4 shadow-xl bg-black  rounded-3xl container">
             <div className="flex lg:flex-row flex-col lg:justify-between justify-center lg:py-6">
               <div className="text-white">
                 <div className="flex justify-center lg:justify-start mb-3">

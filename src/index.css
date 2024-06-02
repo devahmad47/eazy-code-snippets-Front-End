@@ -29,3 +29,21 @@ code {
   animation: spin 12s linear infinite; 
 }
 
+/* welcome model */
+/* App.css */
+.bg-teal-lightest {
+  background-color: #e0f7fa;
+}
+.bg-modal {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bg-teal {
+  background-color: #008080;
+}
+.bg-teal-dark {
+  background-color: #006666;
+}
+.flex-no-shrink {
+  flex-shrink: 0;
+}
+/* Add other required styles */

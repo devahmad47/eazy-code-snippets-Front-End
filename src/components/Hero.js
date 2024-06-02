@@ -11,7 +11,7 @@ const Hero = () => {
   };
   return (
     <>
-      <div class=" bg-gradient-to-b from-purple-100 to-indigo-100 lg:-mt-6 ">
+      <div class=" bg-gradient-to-b from-purple-400 to-indigo-100 lg:-mt-6 ">
         {/* hero 2 */}
         <div
           class="items-center w-10/12 grid-cols-2 mx-auto overflow-x-hidden lg:grid md:py-14 lg:py-24 xl:py-14 lg:mt-3 xl:mt-5"
@@ -20,8 +20,7 @@ const Hero = () => {
         >
           <div class="pr-2  py-14 md:py-0 mt-16 lg:mt-16">
             <h1 class="text-3xl font-bold text-blue-900 xl:text-5xl lg:text-3xl">
-              <span class="block w-full font-bold">Welcome to</span>FA Smart
-              Tech & Solutions...
+              <span class="block w-full font-bold">Welcome to</span>Eazy Code Snippets Mart...  
             </h1>
             <p class="py-4 text-lg text-gray-500 2xl:py-8 md:py-6 2xl:pr-5">
               Empower your business with cutting-edge technology solutions

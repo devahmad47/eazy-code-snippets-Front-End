@@ -17,7 +17,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navigation = [
-    { name: "Home", Link: "/", icon: <FiHome className="h-5 w-5" /> },
+    { name: "Home", Link: "/home", icon: <FiHome className="h-5 w-5" /> },
     // {
     //   icon: <FiFolder className="h-5 w-5" />,
     //   name: "Features",
@@ -73,7 +73,7 @@ const Navbar = () => {
     <>
       <div className="relative b-0 bg-gradient-to-b from-purple-100 to-indigo-100">
         <header
-          className={`fixed top-0 z-50 shadow-2xl bg-[#dbdbdb] inset-x-0 mt-6 lg:ml-14 lg:mr-14 rounded-l-full rounded-r-full`}
+          className={`fixed top-0 z-50 shadow-2xl bg-[#ffffff] inset-x-0 mt-6 lg:ml-14 lg:mr-14 rounded-l-full rounded-r-full`}
         >
         
 
