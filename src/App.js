@@ -16,7 +16,8 @@ import { useDispatch } from "react-redux";
 import WebProducts from "./components/WebProducts";
 import Image from "./components/Image";
 import Welcome from "./components/Welcome";
-
+const url = process.env.REACT_APP_CHATBOT;
+const key = process.env.REACT_APP_APIKEY;
 
 
 function App() {
@@ -80,7 +81,8 @@ function App() {
       // Otherwise, use the GPT API to generate a response
       try {
         const response = await axios({
-          url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyBwFybWlwIuEPnLSIJuaA5MOgvXTfhch80",
+          url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent",
+          key:"AIzaSyBwFybWlwIuEPnLSIJuaA5MOgvXTfhch80",
           method: "post",
           data: {
             "contents": [

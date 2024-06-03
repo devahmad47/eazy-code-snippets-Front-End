@@ -10,7 +10,7 @@ const Welcome = () => {
   };
 
   return (
-    <div className="h-screen w-full flex flex-col items-center justify-center bg-teal-lightest font-sans">
+    <div className="relative h-screen w-full z-50 backdrop-blur-50 flex flex-col items-center justify-center font-sans">
       {modalVisible && (
         <div
           onClick={closeModal}
