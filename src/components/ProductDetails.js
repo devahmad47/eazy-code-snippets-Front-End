@@ -196,15 +196,11 @@ const ProductDetails = () => {
 
                   </div>
                   <Link 
-                    to={`/Appointment/${myProduct._id}`}
+                    to="https://www.jazzcash.com.pk/shop/money-transfer-shop/"
                       type="button"                  
                       class="inline-flex items-center justify-center rounded-md border-2 border-transparent bg-gray-900 bg-none px-12 py-3 text-center text-base font-bold text-white transition-all duration-200 ease-in-out focus:shadow hover:bg-gray-800"
                     >
-                     <img
-                            class="h-full w-full object-cover"
-                            src="jazzcash"
-                            alt=""
-                          />
+                    
                      Jazz Cash
                     </Link>
                   <ul class="mt-8 space-y-2">

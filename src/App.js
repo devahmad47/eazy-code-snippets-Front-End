@@ -29,12 +29,12 @@ function App() {
 
     // Define your custom prompts based on your website content
     const customPrompts = {
-      contact: "You can contact us at contact@yourwebsite.com or call us at (123) 456-7890.",
+      contact: "You can contact us at contact@easycode.com or call us at (123) 456-7890.",
       appointment: "To book an appointment, please visit our booking page or call us at (123) 456-7890.",
       componentAvailability: "Yes, we have a variety of components available. Please visit our components page for more details.",
       pricing: "For pricing information, please visit our pricing page or contact our sales team at sales@yourwebsite.com.",
       services: "We offer a range of services including custom component design, technical support, and consultancy. Visit our services page for more details.",
-      support: "For technical support, please visit our support page or email support@yourwebsite.com.",
+      support: "For technical support, please visit our support page or email support@easycode.com.",
       shipping: "We offer worldwide shipping. For more information on shipping rates and delivery times, visit our shipping page.",
       returns: "Our return policy allows you to return products within 30 days of purchase. Visit our returns page for more information.",
       warranty: "Our products come with a one-year warranty. Visit our warranty page for more details.",
@@ -274,7 +274,7 @@ function App() {
       >
         <i className="fas fa-comments w-6 h-6"></i>
         <span className="sr-only">Chat Support</span>
-        {/* <div className='window hide' ref={chatsupportref}>
+         <div className='window hide' ref={chatsupportref}>
           <h1>Chat-bot</h1>
           <div className='question'>
             <input type="text" name="text" id="question" placeholder='Enter your message' value={query} onChange={(e) => { setQuery(e.target.value) }} />
@@ -288,11 +288,11 @@ function App() {
               </div>
             ))}
           </div>
-        </div> */}
+        </div> 
 
       </button>
 
-      {/* <div className='window hide' ref={chatsupportref}>
+       <div className='window hide' ref={chatsupportref}>
         <h1>Chat-bot</h1>
         <div className='question'>
           <input type="text" name="text" id="question" placeholder='Enter your message' value={query} onChange={(e) => { setQuery(e.target.value) }} />
@@ -306,7 +306,7 @@ function App() {
             </div>
           ))}
         </div>
-      </div> */}
+      </div> 
       <div className={`${isopen ? "overlay":""}`}>
         <div className='window hide' ref={chatsupportref}>
             <h1>Chat-bot</h1>
