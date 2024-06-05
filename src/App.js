@@ -296,7 +296,7 @@ function App() {
           ))}
         </div>
       </div> */}
-      <div className={`${isopen ? "background overlay":"overlay"}`}>
+      <div className={`${isopen ? "overlay":""}`}>
         <div className='window hide' ref={chatsupportref}>
             <h1>Chat-bot</h1>
             <div className='question'>
