@@ -3,6 +3,7 @@ import { HeartIcon, ShoppingBagIcon } from "@heroicons/react/solid";
 import { Link, useParams } from "react-router-dom";
 import {  useSelector } from "react-redux";
 import {  selectProduct } from "../StoreRedux/productSlice";
+import  jazzcash  from "../assests/jazzcash.svg"
 const ProductDetails = () => {
   const products = useSelector(selectProduct);
   const [myProduct, setMyProducts] = useState(null);
@@ -10,6 +11,7 @@ const ProductDetails = () => {
   //  const handleImage=(index)=>{
   //   setMainImage(index)
   //  }
+
   const [loading, setLoading] = useState(false);
   const { _id } = useParams();
   console.log("details====>>", products);
@@ -169,7 +171,7 @@ const ProductDetails = () => {
                       <h1 class="text-3xl font-bold">${myProduct.price}</h1>
                       <span class="text-base">/month</span>
                     </div>
-
+                  
                     <Link 
                     to={`/Appointment/${myProduct._id}`}
                       type="button"                  
@@ -191,8 +193,20 @@ const ProductDetails = () => {
                       </svg>
                      Book Appointment
                     </Link>
-                  </div>
 
+                  </div>
+                  <Link 
+                    to={`/Appointment/${myProduct._id}`}
+                      type="button"                  
+                      class="inline-flex items-center justify-center rounded-md border-2 border-transparent bg-gray-900 bg-none px-12 py-3 text-center text-base font-bold text-white transition-all duration-200 ease-in-out focus:shadow hover:bg-gray-800"
+                    >
+                     <img
+                            class="h-full w-full object-cover"
+                            src="jazzcash"
+                            alt=""
+                          />
+                     Jazz Cash
+                    </Link>
                   <ul class="mt-8 space-y-2">
                     <li class="flex items-center text-left text-sm font-medium text-gray-600">
                       <svg

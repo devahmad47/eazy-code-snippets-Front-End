@@ -37,7 +37,7 @@ const Products = () => {
   return (
     <>
       <div className="">
-        <div className="bg-gray-200">
+        <div className="bg-purple-300">
           {/* feature items */}
           <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
             <div className="border-b mb-5 flex justify-between text-sm">

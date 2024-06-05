@@ -64,10 +64,10 @@ const Contact = () => {
                   We're thrilled to connect with you and discuss how FA Smart
                   Tech & Solutions can help meet your software needs.
                 </p>
-                <div className="flex items-center justify-center lg:mt-24 w-full rounded-lg bg-gray-300">
+                <div className="flex items-center justify-center lg:mt-24 w-full rounded-lg bg-purple-400">
                   <button className="flex">
                     <div className="flex lg:flex-row flex-col items-center lg:space-x-2 lg:pb-20 pb-10 lg:pt-20 pt-10">
-                      <div className="flex justify-center mb-2 lg:mb-0 bg-gray-300 lg:justify-start border-[3px] border-black overflow-hidden rounded-full">
+                      <div className="flex justify-center mb-2 lg:mb-0 bg-gray-300 lg:justify-start border-[3px] border-white overflow-hidden rounded-full">
                         <img
                           src="https://res.cloudinary.com/dizppn4hy/image/upload/v1698750682/sir_usman_1_p7caf7.png"
                           alt="logo"
@@ -76,16 +76,16 @@ const Contact = () => {
                         />
                       </div>
                       <div className="lg:text-justify text-center">
-                        <h5 className="text-primary-50 mb-2 lg:mb-0 dark:text-black">
+                        <h5 className="text-primary-50 mb-2 lg:mb-0 text-white">
                           Mr Ahmad
                         </h5>
-                        <h2 className="paragraf3 text-primary-50 dark:text-black">
+                        <h2 className="paragraf3 text-primary-50 text-white">
                           CEO Fasmart Co.
                         </h2>
-                        <h2 className="paragraf4 text-primary-50 dark:text-black">
+                        <h2 className="paragraf4 text-primary-50 text-white">
                           dummy@mail.com
                         </h2>
-                        <h2 className="paragraf4 text-primary-50 dark:text-black">
+                        <h2 className="paragraf4 text-primary-50 text-white">
                           +92 341 323454
                         </h2>
                       </div>
@@ -95,7 +95,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="lg:pl-4">
-              <div className="overflow-hidden bg-gray-300 rounded-2xl">
+              <div className="overflow-hidden bg-purple-400 rounded-2xl">
                 <div className="p-6 sm:p-10">
                   <h3 className="text-3xl font-semibold text-black">
                     Get a free quote

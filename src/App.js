@@ -15,7 +15,9 @@ import axios from "axios";
 import { useDispatch } from "react-redux";
 import WebProducts from "./components/WebProducts";
 import Image from "./components/Image";
-
+import Welcome from "./components/Welcome";
+const url = process.env.REACT_APP_CHATBOT;
+const key = process.env.REACT_APP_APIKEY;
 
 
 function App() {
@@ -79,7 +81,8 @@ function App() {
       // Otherwise, use the GPT API to generate a response
       try {
         const response = await axios({
-          url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyBwFybWlwIuEPnLSIJuaA5MOgvXTfhch80",
+          url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent",
+          key:"AIzaSyBwFybWlwIuEPnLSIJuaA5MOgvXTfhch80",
           method: "post",
           data: {
             "contents": [
@@ -143,6 +146,12 @@ function App() {
     fetchProducts();
   }, []);
   // Use useRef to access the DOM element
+
+// welcome model 
+
+
+
+
   const toTopButtonRef = useRef(null);
   const chatSupportButtonRef = useRef(null);
   const chatsupportref = useRef(null)
@@ -225,9 +234,11 @@ function App() {
 
   return (
     <div className="App">
+
       <Header />
       <Routes>
-        <Route path="/" exact element={<Home />} />
+      <Route path="/" exact element={<Welcome />} />
+        <Route path="/Home" exact element={<Home />} />
         <Route path="/products" element={<LayoutProducts />} />
         <Route path="/Appointment/:productId?" element={<Appointment />} />
         <Route path="/contact-us" element={<ContactForm />} />

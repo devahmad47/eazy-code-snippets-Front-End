@@ -18,7 +18,7 @@ const Appointment = () => {
     projectFile: "",
   });
   const uploadFile = (e) => {
-    const file = e.target.files[0];
+    const file = e.target.files[0];//mean pick single file at once
     const fileSizeInBytes = file.size;
     const fileSizeInKilobytes = fileSizeInBytes / 1024; // Convert bytes to KB
     const fileSizeInMegabytes = fileSizeInKilobytes / 1024; // Convert KB to MB
@@ -86,7 +86,6 @@ const Appointment = () => {
 
       return response.data.secure_url;
     } catch (error) {
-
       console.error("Error uploading image:", error);
 alert("Please Choose file size less than 10MB")
       return "";
@@ -132,10 +131,10 @@ alert("Please Choose file size less than 10MB")
           </div>
         </aside>
         <form
-          className="md:w-2/3 border-1 bg-gray-200"
+          className="md:w-2/3 border-1 bg-white border border-bottom"
           onSubmit={handleSubmit}
         >
-          <div className="text-2xl py-4 px-6 bg-gray-900 text-white text-center  font-bold uppercase">
+          <div className="text-2xl py-4 px-6 bg-purple-400 text-white text-center  font-bold uppercase">
             Book an Appointment
           </div>
 
